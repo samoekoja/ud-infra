@@ -37,6 +37,8 @@ jobs:
   #         command: ansible-playbook -i inventory main-remote.yml
 
   destroy_environment:
+    docker:
+      - image: amazon/aws-cli
     steps: 
       - run:
           name: Destroy 
